@@ -166,29 +166,29 @@ body {
 
 /* ===== THEME TOGGLE ===== */
 
-.nav-actions {
+.nav-theme-toggle-item {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  margin-left: var(--space-2);
+  padding-left: var(--space-2);
+  border-left: 1px solid var(--color-border);
 }
 
 .theme-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   border-radius: var(--radius-full);
   background: none;
-  border: 1.5px solid var(--color-border);
+  border: none;
   cursor: pointer;
   color: var(--color-text);
-  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-spring);
+  transition: color var(--transition-fast), transform var(--transition-spring);
 }
 
 .theme-toggle:hover {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary);
   color: var(--color-primary);
   transform: scale(1.08);
 }
@@ -412,6 +412,10 @@ body {
   margin: 0 auto;
   position: relative;
   z-index: 2;
+}
+
+[data-theme="dark"] .idea-content p {
+  color: #a0a0a0;
 }
 
 .idea-content p {
@@ -841,6 +845,14 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 6px 30px rgba(178, 252, 0, 0.4);
   color: var(--color-text-heading);
+}
+
+[data-theme="dark"] .btn-schemat-cta {
+  color: #2a2a2a;
+}
+
+[data-theme="dark"] .btn-schemat-cta:hover {
+  color: #2a2a2a;
 }
 
 .btn-collapse {
@@ -1518,6 +1530,14 @@ body {
   color: var(--color-text-heading);
 }
 
+[data-theme="dark"] .btn-cennik-cta {
+  color: #2a2a2a;
+}
+
+[data-theme="dark"] .btn-cennik-cta:hover {
+  color: #2a2a2a;
+}
+
 /* ===== PROCES SECTION ===== */
 
 .proces-section {
@@ -1906,8 +1926,20 @@ body {
 
 .footer {
   background-color: var(--color-bg-footer);
-  color: var(--color-text-inverse);
+  color: rgba(255, 255, 255, 0.85);
   padding: var(--space-8) 0;
+}
+
+[data-theme="dark"] .footer {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="dark"] .footer p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+[data-theme="dark"] .footer p a {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .footer .container {
