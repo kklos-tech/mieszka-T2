@@ -140,10 +140,10 @@
   --color-shadow-lg: rgba(0, 0, 0, 0.5);
   --color-shadow-xl: rgba(0, 0, 0, 0.6);
 
-  --color-primary: #5b9fff;
-  --color-primary-hover: #4a8aee;
-  --color-primary-light: rgba(91, 159, 255, 0.12);
-  --color-primary-subtle: rgba(91, 159, 255, 0.06);
+  --color-primary: #2f79ff;
+  --color-primary-hover: #1a6aee;
+  --color-primary-light: rgba(47, 121, 255, 0.12);
+  --color-primary-subtle: rgba(47, 121, 255, 0.06);
 
   --color-danger-light: #3d0f0f;
   --color-warning-light: #2d2000;
