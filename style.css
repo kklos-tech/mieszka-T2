@@ -582,7 +582,7 @@ a {
 }
 
 .flow-step:nth-child(3) {
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, var(--color-premium) 0%, var(--color-premium-hover) 100%);
   color: var(--color-text-inverse);
   border-left: 4px solid var(--color-text-inverse);
 }
@@ -623,7 +623,7 @@ a {
 
 .flow-step:nth-child(3) .flow-step-number {
   background: var(--color-text-inverse);
-  color: #3b82f6;
+  color: var(--color-premium);
 }
 
 .flow-step:nth-child(4) .flow-step-number {
@@ -1245,7 +1245,7 @@ a {
 }
 
 .card-premium {
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, var(--color-premium) 0%, var(--color-premium-hover) 100%);
 }
 
 .card-header h3 {
