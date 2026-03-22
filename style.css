@@ -988,7 +988,7 @@ a {
 .projekt-gallery {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: #333;
   touch-action: pan-y pinch-zoom;
