@@ -988,7 +988,7 @@ a {
 .projekt-gallery {
   position: relative;
   width: 100%;
-  height: 500px;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: #333;
   touch-action: pan-y pinch-zoom;
@@ -1305,9 +1305,6 @@ a {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .projekt-gallery {
-    height: 400px;
-  }
 
   .projekt-info {
     padding: 32px 36px;
@@ -1334,7 +1331,6 @@ a {
   }
 
   .projekt-gallery {
-    height: 300px;
     border-radius: 0;
   }
 
