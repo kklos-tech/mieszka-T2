@@ -622,19 +622,21 @@ a {
 @media (min-width: 1024px) {
   .image-faq-grid {
     grid-template-columns: 1fr 1.2fr;
-    align-items: start;
+    align-items: stretch;
   }
 
   .image-faq-image {
-    height: auto;
+    height: 100%;
     max-height: none;
-    min-height: 650px;
+    min-height: auto;
+    align-self: stretch;
   }
 
   .image-faq-image img {
     height: 100%;
-    min-height: 650px;
+    width: 100%;
     object-fit: cover;
+    object-position: center;
   }
 }
 
