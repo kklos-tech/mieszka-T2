@@ -139,7 +139,7 @@ function showFlowchartAlter2(scenarioId) {
   if (collapseBtn) collapseBtn.style.display = 'inline-block';
 
   if (steps) {
-    steps.innerHTML = data.stages.map(stage => `<div class="flow-step"><div class="flow-step-number">${stage.number}</div><div class="flow-step-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${iconsAlter2[stage.icon] || iconsAlter2.iconHome}</svg><div class="flow-step-content"><h4>${stage.title}</h4>${stage.question ? `<p class="flow-step-question">${stage.question}</p>` : ''}${stage.subQuestion ? `<p class="flow-step-subquestion">${stage.subQuestion}</p>` : ''}${stage.points ? `<ul class="flow-step-list">${stage.points.map(point => `<li>${point}</li>`).join('')}</ul>` : ''}</div></div></div>`).join('');
+    steps.innerHTML = data.stages.map(stage => `<div class="flow-step"><div class="flow-step-number">${stage.number}</div><div class="flow-step-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${iconsAlter2[stage.icon] || iconsAlter2.iconHome}</svg><div class="flow-step-content"><h4>${stage.title}</h4>${stage.question ? `<p class="flow-step-question">${stage.question}</p>` : ''}${stage.points ? `<ul class="flow-step-list">${stage.points.map(point => `<li>${point}</li>`).join('')}</ul>` : ''}</div></div></div>`).join('');
   }
 
   setTimeout(() => {
