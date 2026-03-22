@@ -648,7 +648,7 @@ a {
 .flow-step:nth-child(1) .flow-step-header svg { color: var(--color-text-inverse); opacity: 1; }
 .flow-step:nth-child(2) .flow-step-header svg { color: #ef4444; }
 .flow-step:nth-child(3) .flow-step-header svg { color: var(--color-text-inverse); }
-.flow-step:nth-child(4) .flow-step-header svg { color: var(--color-text-inverse); }
+.flow-step:nth-child(4) .flow-step-header svg { color: var(--color-text-heading); }
 
 .flow-step-content h4 {
   margin: 0 0 10px;
@@ -656,6 +656,7 @@ a {
 }
 
 .flow-step:nth-child(1) .flow-step-content h4 { color: var(--color-text-inverse); }
+.flow-step:nth-child(4) .flow-step-content h4 { color: var(--color-text-heading); }
 
 .flow-step-question {
   font-size: var(--text-base);
@@ -667,7 +668,7 @@ a {
 .flow-step:nth-child(1) .flow-step-question { color: rgba(255, 255, 255, 0.95); }
 .flow-step:nth-child(2) .flow-step-question { color: var(--color-danger-dark); }
 .flow-step:nth-child(3) .flow-step-question { color: var(--color-text-inverse); }
-.flow-step:nth-child(4) .flow-step-question { color: var(--color-text-inverse); }
+.flow-step:nth-child(4) .flow-step-question { color: var(--color-text-heading); }
 
 .flow-step-subquestion {
   font-size: var(--text-sm);
@@ -679,7 +680,7 @@ a {
 .flow-step:nth-child(1) .flow-step-subquestion { color: rgba(255, 255, 255, 0.85); }
 .flow-step:nth-child(2) .flow-step-subquestion { color: #b91c1c; }
 .flow-step:nth-child(3) .flow-step-subquestion { color: rgba(255, 255, 255, 0.85); }
-.flow-step:nth-child(4) .flow-step-subquestion { color: rgba(255, 255, 255, 0.85); }
+.flow-step:nth-child(4) .flow-step-subquestion { color: var(--color-text-muted); }
 
 .flow-step-list {
   list-style: none;
@@ -698,7 +699,7 @@ a {
 .flow-step:nth-child(1) .flow-step-list li { color: rgba(255, 255, 255, 0.95); }
 .flow-step:nth-child(2) .flow-step-list li { color: var(--color-danger-dark); }
 .flow-step:nth-child(3) .flow-step-list li { color: rgba(255, 255, 255, 0.95); }
-.flow-step:nth-child(4) .flow-step-list li { color: var(--color-text-inverse); }
+.flow-step:nth-child(4) .flow-step-list li { color: var(--color-text-heading); }
 
 .flow-step-list li::before {
   content: '';
@@ -712,7 +713,7 @@ a {
 .flow-step:nth-child(1) .flow-step-list li::before { content: '\2022'; color: rgba(255, 255, 255, 0.8); }
 .flow-step:nth-child(2) .flow-step-list li::before { content: '\26A0'; color: #ef4444; }
 .flow-step:nth-child(3) .flow-step-list li::before { content: '\2713'; color: var(--color-text-inverse); }
-.flow-step:nth-child(4) .flow-step-list li::before { content: '\2713'; color: var(--color-text-inverse); }
+.flow-step:nth-child(4) .flow-step-list li::before { content: '\2713'; color: var(--color-text-heading); }
 
 .schemat-cta-box {
   background: var(--color-bg-card);
