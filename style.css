@@ -1480,24 +1480,34 @@ a {
   box-shadow: var(--shadow-lg);
 }
 
+.proces-step[data-step="1"] { background: linear-gradient(135deg, #3299FF 0%, #2D8FEF 100%); }
+.proces-step[data-step="2"] { background: linear-gradient(135deg, #2D8FEF 0%, #2A84E0 100%); }
+.proces-step[data-step="3"] { background: linear-gradient(135deg, #2A84E0 0%, #2779D0 100%); }
+.proces-step[data-step="4"] { background: linear-gradient(135deg, #2779D0 0%, #256EC2 100%); }
+.proces-step[data-step="5"] { background: linear-gradient(135deg, #256EC2 0%, #2A6CC0 100%); }
+.proces-step[data-step="6"] { background: linear-gradient(135deg, #2A6CC0 0%, #2765D0 100%); }
+
 .step-number {
   font-size: 3rem;
   font-weight: var(--fw-extrabold);
-  color: var(--color-primary);
-  opacity: 0.2;
+  color: rgba(255, 255, 255, 0.3);
   font-family: var(--font-heading);
   margin-bottom: var(--space-4);
 }
 
 .proces-step h3 {
-  color: var(--color-text-heading);
+  color: var(--color-text-inverse);
   margin-bottom: var(--space-4);
 }
 
 .proces-step p {
-  color: var(--color-text);
+  color: rgba(255, 255, 255, 0.85);
   line-height: var(--leading-normal);
   margin-bottom: 0;
+}
+
+.proces-step p strong {
+  color: var(--color-text-inverse);
 }
 
 /* ===== ZEZNANIA / TESTIMONIALS ===== */
