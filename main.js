@@ -30,6 +30,13 @@ function initNavigation() {
     navMenu.classList.toggle('active');
   });
 
+  document.addEventListener('click', (e) => {
+    if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }
+  });
+
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
