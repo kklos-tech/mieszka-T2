@@ -1827,7 +1827,7 @@ a {
 .footer {
   background-color: var(--color-bg-footer);
   color: var(--color-text-inverse);
-  padding: var(--space-16) 0;
+  padding: var(--space-8) 0;
 }
 
 .footer .container {
@@ -1844,7 +1844,7 @@ a {
 }
 
 .footer-logo-svg {
-  width: 100px;
+  width: 120px;
   height: auto;
   fill: rgba(255, 255, 255, 0.7);
   transition: all var(--transition-base);
@@ -1859,6 +1859,17 @@ a {
   margin-bottom: 0;
   font-size: var(--text-sm);
   opacity: 0.8;
+}
+
+.footer p a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.footer p a:hover {
+  color: var(--color-text-inverse);
 }
 
 /* ===== ANIMATIONS ===== */
