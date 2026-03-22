@@ -555,16 +555,30 @@ a {
   background-color: var(--white);
 }
 
+.image-faq-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.image-faq-header h2 {
+  color: var(--grey-darker);
+  margin-bottom: var(--spacing-sm);
+}
+
+.image-faq-header .section-intro {
+  margin-bottom: 0;
+}
+
 .image-faq-grid {
   display: grid;
-  gap: var(--spacing-3xl);
-  align-items: stretch;
+  gap: var(--spacing-2xl);
 }
 
 .image-faq-image {
   width: 100%;
   overflow: hidden;
   border-radius: 12px;
+  max-height: 30vh;
 }
 
 .image-faq-image img {
@@ -578,17 +592,6 @@ a {
   width: 100%;
 }
 
-.image-faq-content h2 {
-  color: var(--grey-darker);
-  margin-bottom: var(--spacing-sm);
-  text-align: center;
-}
-
-.image-faq-content .section-intro {
-  text-align: center;
-  margin-bottom: var(--spacing-2xl);
-}
-
 @media (min-width: 768px) {
   .image-faq-grid {
     grid-template-columns: 1fr 1fr;
@@ -596,26 +599,7 @@ a {
   }
 
   .image-faq-image {
-    height: auto;
     max-height: 400px;
-  }
-
-  .image-faq-image img {
-    height: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .image-faq-image {
-    height: auto;
-    max-height: 30vh;
-    aspect-ratio: auto;
-  }
-
-  .image-faq-image img {
-    height: auto;
-    max-height: 30vh;
-    object-position: center;
   }
 }
 
@@ -626,19 +610,16 @@ a {
   }
 
   .image-faq-image {
-    overflow: hidden;
-    border-radius: 12px;
     max-height: none;
-    height: 100%;
-    display: block;
   }
 
-  .image-faq-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
+  .image-faq-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-faq-content .faq-container {
+    flex: 1;
   }
 }
 
