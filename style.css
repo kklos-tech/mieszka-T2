@@ -1822,6 +1822,10 @@ a {
   color: var(--color-primary);
 }
 
+.contact-social--hidden {
+  display: none;
+}
+
 /* ===== FOOTER ===== */
 
 .footer {
