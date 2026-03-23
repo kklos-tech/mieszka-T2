@@ -2136,6 +2136,11 @@ body {
 
 [data-theme="dark"] .footer p a {
   color: rgba(255, 255, 255, 0.8);
+  transition: color var(--transition-base);
+}
+
+[data-theme="dark"] .footer p a:hover {
+  color: #00ff00;
 }
 
 .footer .container {
