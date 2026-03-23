@@ -1784,7 +1784,15 @@ body {
   font-weight: var(--fw-extrabold);
   color: rgba(0, 255, 100, 0.25);
   font-family: var(--font-heading);
+  margin-bottom: var(--space-2);
+}
+
+.step-icon {
+  width: 40px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: var(--space-4);
+  display: block;
 }
 
 .proces-step h3 {
