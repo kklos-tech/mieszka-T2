@@ -552,11 +552,10 @@ body {
 }
 
 .idea-subtitle {
-  text-align: center;
-  color: var(--color-text-muted);
   font-size: var(--text-lg);
-  margin-top: calc(var(--space-2) * -1);
-  margin-bottom: var(--space-8);
+  color: var(--color-text-muted);
+  margin: 0;
+  margin-top: -14px;
   position: relative;
   z-index: 2;
 }
