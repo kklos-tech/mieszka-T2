@@ -1,7 +1,7 @@
 export const projektyData = [
   {
     id: 1,
-    title: "Lazienka marzen",
+    title: "Łazienka marzen",
     type: "Kamienica",
     size: "7m\u00B2",
     date: "2015",
@@ -19,7 +19,7 @@ export const projektyData = [
   },
   {
     id: 2,
-    title: "Bud\u017Cetowa kuchnia",
+    title: "Budżetowa kuchnia",
     type: "Stare budownictwo",
     size: "40m\u00B2",
     date: "2025",
@@ -29,8 +29,7 @@ export const projektyData = [
       "/images/projects/002/3.jpg",
       "/images/projects/002/4.jpg"
     ],
-    problem: "Niewielka kuchnia, wymagaj\u0105ca remontu. Ograniczona \u015Bcianami no\u015Bnymi. Punkty wody i pralka musz\u0105 zosta\u0107 na swoim miejscu. Bardzo niski bud\u017Cet. Niewielka przestrze\u0144 robocza. Pralka musi zosta\u0107.",
-    solution: "Odzyskiwanie starych materia\u0142\u00F3w i mebli. Odmalowanie kafli",
+    problem: "Niewielka kuchnia, wymagająca remontu. Ograniczona ścianami nośnymi. Punkty wody i pralka muszą zostać na swoim miejscu. Bardzo niski budżet. Niewielka przestrzeń robocza. Pralka musi zostać. Odzyskiwanie starych materiałów i mebli. Odmalowanie kafli",
     result: "Przestrze\u0144 zyska\u0142a logik\u0119 i komfort u\u017Cytkowania. Du\u017Co przestrzeni roboczej dzi\u0119ki wielkim blatom. Kompromisem by\u0142 ma\u0142y st\u00F3\u0142, ale korzystaj\u0105 z niego tylko dwie osoby.",
     benefits: ["Szybka realizacja", "Niski koszt", "Du\u017Co przestrzeni roboczej"]
   },
