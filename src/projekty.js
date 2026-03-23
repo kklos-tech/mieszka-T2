@@ -1,51 +1,23 @@
-let projektyData = null;
+import { projektyData } from './projekty-data.js';
+
 let currentProjektIndex = 0;
 let currentGalleryIndexes = {};
 let touchStartX = 0;
 let touchEndX = 0;
 let touchStartY = 0;
 let touchEndY = 0;
-let initialized = false;
 
-let readyResolve;
-export const projektyReady = new Promise(resolve => { readyResolve = resolve; });
-
-async function loadProjektyData() {
-  if (projektyData) return projektyData;
-  const module = await import('./projekty-data.js');
-  projektyData = module.projektyData;
-  return projektyData;
-}
+projektyData.forEach((_, index) => {
+  currentGalleryIndexes[index] = 0;
+});
 
 export function initProjekty() {
   const section = document.getElementById('projekty');
-  if (!section || initialized) return;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(async (entry) => {
-      if (entry.isIntersecting) {
-        observer.unobserve(entry.target);
-        await loadAndRender();
-      }
-    });
-  }, { rootMargin: '300px 0px' });
-
-  observer.observe(section);
-}
-
-async function loadAndRender() {
-  if (initialized) return;
-  initialized = true;
-
-  await loadProjektyData();
-  projektyData.forEach((_, index) => {
-    currentGalleryIndexes[index] = 0;
-  });
+  if (!section) return;
 
   renderProjekt(currentProjektIndex);
   updateProjektIndicator();
   document.addEventListener('keydown', handleKeyboardNavigation);
-  readyResolve();
 }
 
 function handleKeyboardNavigation(e) {
@@ -106,7 +78,7 @@ function renderProjekt(index) {
       <div class="gallery-slides" id="gallery-slides-${index}">
         ${projekt.images.map((img, i) => `
           <div class="gallery-slide">
-            <img src="${img}" alt="${projekt.title} - zdjecie ${i + 1}" loading="lazy"
+            <img src="${img}" alt="${projekt.title} - zdjecie ${i + 1}" loading="${i === 0 ? 'eager' : 'lazy'}"
                  onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22%3E%3Crect fill=%22%23ddd%22 width=%22800%22 height=%22500%22/%3E%3Ctext fill=%22%23999%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-family=%22Arial%22 font-size=%2224%22%3EZdjecie ${i + 1}%3C/text%3E%3C/svg%3E'">
           </div>
         `).join('')}
@@ -167,10 +139,10 @@ function renderProjekt(index) {
           <p>${projekt.challenge}</p>
         </div>
 
-        <div class="projekt-section">
+        ${projekt.solution ? `<div class="projekt-section">
           <h3>Rozwiazanie</h3>
           <p>${projekt.solution}</p>
-        </div>
+        </div>` : ''}
 
         <div class="projekt-section">
           <h3>Rezultat</h3>

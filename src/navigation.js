@@ -1,5 +1,3 @@
-import { projektyReady } from './projekty.js';
-
 export function initNavigation() {
   const navbar = document.getElementById('navbar');
   const hamburger = document.getElementById('hamburger');
@@ -59,10 +57,8 @@ export function initNavigation() {
     window.scrollTo({ top, behavior: 'smooth' });
   }
 
-  const projektySection = document.getElementById('projekty');
-
   navLinks.forEach(link => {
-    link.addEventListener('click', async (e) => {
+    link.addEventListener('click', (e) => {
       e.preventDefault();
       const targetId = link.getAttribute('href');
       const targetSection = document.querySelector(targetId);
@@ -71,13 +67,6 @@ export function initNavigation() {
       navMenu.classList.remove('active');
 
       if (!targetSection) return;
-
-      const targetIsAfterProjekty = projektySection &&
-        projektySection.compareDocumentPosition(targetSection) & Node.DOCUMENT_POSITION_FOLLOWING;
-
-      if (targetIsAfterProjekty) {
-        await projektyReady;
-      }
 
       scrollToSection(targetSection);
     });
