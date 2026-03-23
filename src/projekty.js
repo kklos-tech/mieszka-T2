@@ -7,6 +7,9 @@ let touchStartY = 0;
 let touchEndY = 0;
 let initialized = false;
 
+let readyResolve;
+export const projektyReady = new Promise(resolve => { readyResolve = resolve; });
+
 async function loadProjektyData() {
   if (projektyData) return projektyData;
   const module = await import('./projekty-data.js');
@@ -17,7 +20,17 @@ async function loadProjektyData() {
 export function initProjekty() {
   const section = document.getElementById('projekty');
   if (!section || initialized) return;
-  loadAndRender();
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(async (entry) => {
+      if (entry.isIntersecting) {
+        observer.unobserve(entry.target);
+        await loadAndRender();
+      }
+    });
+  }, { rootMargin: '300px 0px' });
+
+  observer.observe(section);
 }
 
 async function loadAndRender() {
@@ -32,6 +45,7 @@ async function loadAndRender() {
   renderProjekt(currentProjektIndex);
   updateProjektIndicator();
   document.addEventListener('keydown', handleKeyboardNavigation);
+  readyResolve();
 }
 
 function handleKeyboardNavigation(e) {
