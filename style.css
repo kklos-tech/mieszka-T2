@@ -2148,6 +2148,11 @@ body {
 
   .image-faq-image {
     max-height: none;
+    height: 100%;
+  }
+
+  .image-faq-image img {
+    height: 100%;
   }
 
   .image-faq-content {
