@@ -4,10 +4,13 @@
   --color-primary-light: rgba(47, 121, 255, 0.08);
   --color-primary-subtle: rgba(47, 121, 255, 0.05);
 
-  --color-accent: #b2fc00;
-  --color-accent-hover: #9de600;
-  --color-accent-soft: #52fcae;
-  --color-accent-shadow: rgba(178, 252, 0, 0.3);
+  --color-accent: #52fcae;
+  --color-accent-hover: #3dd89a;
+  --color-accent-soft: #b2fcda;
+  --color-accent-shadow: rgba(82, 252, 174, 0.3);
+  --color-accent-vivid: #b2fc00;
+  --color-accent-vivid-hover: #9de600;
+  --color-accent-vivid-shadow: rgba(178, 252, 0, 0.3);
 
   --color-danger: #dc2626;
   --color-danger-light: #fee2e2;
