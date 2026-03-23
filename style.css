@@ -1716,7 +1716,7 @@ body {
 .step-number {
   font-size: 3rem;
   font-weight: var(--fw-extrabold);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 255, 100, 0.25);
   font-family: var(--font-heading);
   margin-bottom: var(--space-4);
 }
