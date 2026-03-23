@@ -657,20 +657,20 @@ body {
 }
 
 .scenario-card h3 {
-  font-size: var(--text-lg);
+  font-size: 1.375rem;
   margin-bottom: var(--space-1);
   color: var(--color-text-heading);
 }
 
 .scenario-title {
-  font-size: var(--text-sm);
+  font-size: 0.9625rem;
   font-weight: var(--fw-semibold);
   color: var(--color-text);
   margin: var(--space-1) 0;
 }
 
 .scenario-desc {
-  font-size: var(--text-sm);
+  font-size: 0.9625rem;
   color: var(--color-text-muted);
   line-height: var(--leading-normal);
   margin-bottom: var(--space-3);
@@ -684,7 +684,7 @@ body {
   align-items: center;
   gap: var(--space-2);
   transition: color var(--transition-base);
-  font-size: var(--text-sm);
+  font-size: 0.9625rem;
 }
 
 .scenario-card:hover .scenario-cta {
