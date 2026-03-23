@@ -101,6 +101,8 @@ a {
   color: var(--color-text-muted);
   margin-bottom: var(--space-16);
   text-align: center;
+  font-style: italic;
+  margin-top: -10px;
 }
 
 /* ===== DARK MODE TRANSITION ===== */
@@ -598,6 +600,8 @@ body {
   font-size: var(--text-lg);
   color: var(--color-text-muted);
   margin: 0;
+  font-style: italic;
+  margin-top: -10px;
 }
 
 .scenario-grid {
@@ -1044,6 +1048,8 @@ body {
   font-size: var(--text-lg);
   color: var(--color-text-muted);
   margin: 0;
+  font-style: italic;
+  margin-top: -10px;
 }
 
 .projekt-container {
@@ -1448,6 +1454,8 @@ body {
   font-size: var(--text-lg);
   color: var(--color-text-muted);
   margin: 0;
+  font-style: italic;
+  margin-top: -10px;
 }
 
 .cennik-info-box {
