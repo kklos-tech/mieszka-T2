@@ -1890,10 +1890,14 @@ body {
 
 .quote-icon {
   font-size: 4rem;
-  color: var(--color-primary);
-  opacity: 0.2;
+  color: var(--color-accent);
+  opacity: 0.8;
   line-height: 1;
-  font-family: Georgia, serif;
+  font-family: 'Courier New', monospace;
+}
+
+.quote-icon::before {
+  content: '// ';
 }
 
 .testimonial blockquote {
