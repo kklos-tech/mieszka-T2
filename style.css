@@ -2445,26 +2445,26 @@ body {
   .popular-badge { font-size: var(--text-xs); padding: 6px 35px; }
 }
 
-[data-theme="dark"] .flow-step:nth-child(1) .flow-step-content h4 { color: #f5f5f5 !important; }
-[data-theme="dark"] .flow-step:nth-child(1) .flow-step-question { color: #f5f5f5 !important; }
-[data-theme="dark"] .flow-step:nth-child(1) .flow-step-subquestion { color: rgba(224, 224, 224, 0.85) !important; }
-[data-theme="dark"] .flow-step:nth-child(1) .flow-step-list li { color: #e0e0e0 !important; }
-[data-theme="dark"] .flow-step:nth-child(1) .flow-step-header svg { color: #f5f5f5 !important; }
-[data-theme="dark"] .flow-step:nth-child(1) .flow-step-list li::before { color: rgba(224, 224, 224, 0.8) !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-content h4 { color: #c0c0c0 !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-question { color: #c0c0c0 !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-subquestion { color: #a0a0a0 !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-list li { color: #b0b0b0 !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-header svg { color: #b0b0b0 !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-list li::before { color: #a0a0a0 !important; }
 
-[data-theme="dark"] .flow-step:nth-child(2) .flow-step-content h4 { color: #f5f5f5 !important; }
-[data-theme="dark"] .flow-step:nth-child(2) .flow-step-question { color: #f5f5f5 !important; }
-[data-theme="dark"] .flow-step:nth-child(2) .flow-step-subquestion { color: rgba(224, 224, 224, 0.85) !important; }
-[data-theme="dark"] .flow-step:nth-child(2) .flow-step-list li { color: #e0e0e0 !important; }
-[data-theme="dark"] .flow-step:nth-child(2) .flow-step-header svg { color: #f5f5f5 !important; }
-[data-theme="dark"] .flow-step:nth-child(2) .flow-step-list li::before { color: #e0e0e0 !important; }
+[data-theme="dark"] .flow-step:nth-child(2) .flow-step-content h4 { color: #c0c0c0 !important; }
+[data-theme="dark"] .flow-step:nth-child(2) .flow-step-question { color: #c0c0c0 !important; }
+[data-theme="dark"] .flow-step:nth-child(2) .flow-step-subquestion { color: #a0a0a0 !important; }
+[data-theme="dark"] .flow-step:nth-child(2) .flow-step-list li { color: #b0b0b0 !important; }
+[data-theme="dark"] .flow-step:nth-child(2) .flow-step-header svg { color: #b0b0b0 !important; }
+[data-theme="dark"] .flow-step:nth-child(2) .flow-step-list li::before { color: #b0b0b0 !important; }
 
-[data-theme="dark"] .flow-step:nth-child(3) .flow-step-content h4 { color: #f5f5f5 !important; }
-[data-theme="dark"] .flow-step:nth-child(3) .flow-step-question { color: #f5f5f5 !important; }
-[data-theme="dark"] .flow-step:nth-child(3) .flow-step-subquestion { color: rgba(224, 224, 224, 0.85) !important; }
-[data-theme="dark"] .flow-step:nth-child(3) .flow-step-list li { color: #e0e0e0 !important; }
-[data-theme="dark"] .flow-step:nth-child(3) .flow-step-header svg { color: #f5f5f5 !important; }
-[data-theme="dark"] .flow-step:nth-child(3) .flow-step-list li::before { color: #e0e0e0 !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-content h4 { color: #c0c0c0 !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-question { color: #c0c0c0 !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-subquestion { color: #a0a0a0 !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-list li { color: #b0b0b0 !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-header svg { color: #b0b0b0 !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-list li::before { color: #b0b0b0 !important; }
 
 [data-theme="dark"] .flow-step:nth-child(4) .flow-step-content h4 { color: #1a1a1a !important; }
 [data-theme="dark"] .flow-step:nth-child(4) .flow-step-question { color: #1a1a1a !important; }
