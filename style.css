@@ -1847,14 +1847,18 @@ body {
   color: var(--color-text-inverse);
 }
 
-/* ===== ZEZNANIA / TESTIMONIALS ===== */
+/* ===== OPINIE / TESTIMONIALS ===== */
 
-.zeznania-section {
+.opinie-section {
   padding: var(--space-24) 0;
+  background: linear-gradient(135deg, #efefef 0%, #f2f2f2 100%);
+}
+
+[data-theme="dark"] .opinie-section {
   background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
 }
 
-.zeznania-section h2 {
+.opinie-section h2 {
   text-align: center;
   color: var(--color-text-heading);
 }
