@@ -46,4 +46,25 @@ export function initTestimonialsCarousel() {
       showTestimonial((currentTestimonial + 1) % testimonials.length);
     }, 6000);
   });
+
+  let swipeTouchStartX = 0;
+  let swipeTouchStartY = 0;
+
+  carouselContainer.addEventListener('touchstart', (e) => {
+    swipeTouchStartX = e.changedTouches[0].clientX;
+    swipeTouchStartY = e.changedTouches[0].clientY;
+  }, { passive: true });
+
+  carouselContainer.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - swipeTouchStartX;
+    const dy = Math.abs(e.changedTouches[0].clientY - swipeTouchStartY);
+    if (Math.abs(dx) > 50 && dy < 80) {
+      clearInterval(autoplayInterval);
+      if (dx < 0) {
+        showTestimonial((currentTestimonial + 1) % testimonials.length);
+      } else {
+        showTestimonial((currentTestimonial - 1 + testimonials.length) % testimonials.length);
+      }
+    }
+  }, { passive: true });
 }
