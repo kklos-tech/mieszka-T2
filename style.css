@@ -38,11 +38,9 @@ h2 {
 h2::before,
 h2::after {
   content: '/';
-  color: var(--color-primary);
+  color: var(--color-accent);
   font-weight: var(--fw-bold);
-  display: inline-block;
-  transform: skewX(-45deg);
-  font-style: normal;
+  font-style: italic;
 }
 
 h2::before {
