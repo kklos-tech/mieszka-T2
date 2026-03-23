@@ -50,7 +50,8 @@ export function initNavigation() {
 
       if (targetSection) {
         const navHeight = navbar.offsetHeight;
-        const targetPosition = targetSection.offsetTop - navHeight;
+        const rect = targetSection.getBoundingClientRect();
+        const targetPosition = window.scrollY + rect.top - navHeight;
         window.scrollTo({ top: targetPosition, behavior: 'smooth' });
       }
 
