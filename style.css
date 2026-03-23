@@ -158,13 +158,13 @@ body {
 }
 
 .nav-menu li a::before {
-  left: -2px;
-  transform: translateY(-50%) translateX(4px);
+  left: 4px;
+  transform: translateY(-50%) translateX(6px);
 }
 
 .nav-menu li a::after {
-  right: -2px;
-  transform: translateY(-50%) translateX(-4px);
+  right: 4px;
+  transform: translateY(-50%) translateX(-6px);
 }
 
 .nav-menu li a:hover {
