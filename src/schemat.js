@@ -162,7 +162,6 @@ function hideFlowchartAlter2() {
   if (collapseBtn) collapseBtn.style.display = 'none';
 
   setTimeout(() => {
-    const schematSection = document.getElementById('schemat');
-    if (schematSection) schematSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (selector) selector.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, 100);
 }
