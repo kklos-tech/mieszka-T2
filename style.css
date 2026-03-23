@@ -408,27 +408,6 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.hero-trust {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-4);
-  flex-wrap: wrap;
-  animation: fadeInUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
-}
-
-.hero-trust-item {
-  font-size: var(--text-sm);
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: var(--fw-medium);
-}
-
-.hero-trust-separator {
-  width: 4px;
-  height: 4px;
-  background-color: var(--color-accent);
-  border-radius: 50%;
-}
 
 .cta-button {
   display: inline-block;
@@ -1281,6 +1260,81 @@ body {
 .projekt-indicator span {
   color: var(--color-primary);
   font-weight: var(--fw-bold);
+}
+
+/* ===== STATS SECTION ===== */
+
+.stats-section {
+  background-color: var(--color-text-heading);
+  padding: var(--space-16) 0;
+}
+
+[data-theme="dark"] .stats-section {
+  background-color: var(--color-bg-card);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.stats-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-10);
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.stats-number {
+  font-family: var(--font-heading);
+  font-size: var(--text-5xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--color-accent);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.stats-label {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-medium);
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+[data-theme="dark"] .stats-label {
+  color: var(--color-text-muted);
+}
+
+.stats-divider {
+  width: 1px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .stats-divider {
+  background-color: var(--color-border);
+}
+
+@media (max-width: 640px) {
+  .stats-grid {
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .stats-divider {
+    width: 40px;
+    height: 1px;
+  }
+
+  .stats-number {
+    font-size: var(--text-4xl);
+  }
 }
 
 /* ===== CENNIK SECTION ===== */
@@ -2203,16 +2257,7 @@ body {
     text-align: center;
   }
 
-  .hero-trust {
-    flex-direction: column;
-    gap: var(--space-2);
-  }
-
-  .hero-trust-separator {
-    display: none;
-  }
-
-  .schemat-alter2-section { padding: 60px 0; }
+.schemat-alter2-section { padding: 60px 0; }
   .projekty-section { padding: 60px 0; }
   .cennik-section { padding: 60px 0; }
 
