@@ -1222,7 +1222,7 @@ body {
 .projekt-tag {
   background: var(--color-bg-card);
   padding: var(--space-2) var(--space-5);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-lg);
   font-size: var(--text-sm);
   font-weight: var(--fw-semibold);
   color: var(--color-text-muted);
@@ -1282,7 +1282,7 @@ body {
 .benefit-tag {
   background: var(--color-bg-card);
   padding: var(--space-3) var(--space-6);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-lg);
   font-size: var(--text-base);
   font-weight: var(--fw-semibold);
   color: var(--color-text-heading);
