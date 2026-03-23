@@ -255,7 +255,7 @@ body {
   height: 3px;
   background-color: var(--color-text);
   transition: all var(--transition-base);
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 .hamburger.active span:nth-child(1) {
