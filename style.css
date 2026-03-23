@@ -551,6 +551,16 @@ body {
   z-index: 2;
 }
 
+.idea-subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--text-lg);
+  margin-top: calc(var(--space-2) * -1);
+  margin-bottom: var(--space-8);
+  position: relative;
+  z-index: 2;
+}
+
 .idea-content {
   max-width: 800px;
   margin: 0 auto;
