@@ -1265,8 +1265,8 @@ body {
 
 .projekt-section p {
   color: var(--color-text-muted);
-  line-height: var(--leading-loose);
-  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  font-size: 1.1rem;
   margin: 0;
 }
 
@@ -2429,7 +2429,7 @@ body {
   .projekt-sections { grid-template-columns: 1fr; gap: var(--space-5); }
   .projekt-section { padding: var(--space-5); }
   .projekt-section h3 { font-size: var(--text-lg); }
-  .projekt-section p { font-size: var(--text-sm); }
+  .projekt-section p { font-size: 0.96rem; }
   .benefit-tag { font-size: var(--text-sm); padding: 10px 20px; }
   .gallery-nav { width: 48px; height: 48px; }
   .gallery-nav svg { width: 24px; height: 24px; }

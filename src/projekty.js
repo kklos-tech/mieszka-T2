@@ -160,7 +160,7 @@ function renderProjekt(index) {
       <div class="projekt-sections">
         <div class="projekt-section">
           <h3>Wyzwanie</h3>
-          <p>${projekt.problem}</p>
+          <p>${projekt.challenge}</p>
         </div>
 
         <div class="projekt-section">
