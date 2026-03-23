@@ -138,13 +138,14 @@ body {
 .logo-tagline {
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
-  font-size: 10.2px;
+  font-size: 11.2px;
   line-height: 1;
   color: var(--color-primary);
   letter-spacing: 0.035em;
   margin-left: 14px;
-  width: 172px;
-  text-align: right;
+  width: 171px;
+  text-align: justify;
+  text-align-last: justify;
   opacity: 0;
   max-height: 0;
   transform: translateY(-3px);
