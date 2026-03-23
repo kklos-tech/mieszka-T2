@@ -2133,7 +2133,7 @@ body {
 }
 
 .contact-item h3 {
-  color: var(--color-text-heading);
+  color: var(--color-primary);
   margin-bottom: var(--space-4);
 }
 
