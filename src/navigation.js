@@ -11,8 +11,14 @@ export function initNavigation() {
   themeToggle.addEventListener('click', () => {
     const current = document.documentElement.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.classList.add('no-transition');
     document.documentElement.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        document.documentElement.classList.remove('no-transition');
+      });
+    });
   });
 
   window.addEventListener('scroll', () => {
