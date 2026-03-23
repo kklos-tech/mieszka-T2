@@ -1779,20 +1779,26 @@ body {
 .proces-step[data-step="5"] { background: linear-gradient(135deg, #256EC2 0%, #2A6CC0 100%); }
 .proces-step[data-step="6"] { background: linear-gradient(135deg, #2A6CC0 0%, #2765D0 100%); }
 
+.step-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
 .step-number {
   font-size: 3rem;
   font-weight: var(--fw-extrabold);
   color: rgba(0, 255, 100, 0.25);
   font-family: var(--font-heading);
-  margin-bottom: var(--space-2);
+  line-height: 1;
 }
 
 .step-icon {
-  width: 40px;
-  height: 40px;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: var(--space-4);
-  display: block;
+  width: 32px;
+  height: 32px;
+  color: rgba(255, 255, 255, 0.7);
+  flex-shrink: 0;
 }
 
 .proces-step h3 {
