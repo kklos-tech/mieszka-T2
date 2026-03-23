@@ -2140,7 +2140,12 @@ body {
 }
 
 [data-theme="dark"] .footer p a:hover {
-  color: #00ff00;
+  color: var(--color-accent);
+}
+
+[data-theme="dark"] .footer-logo a:hover .footer-logo-svg {
+  fill: var(--color-accent);
+  transform: scale(1.05);
 }
 
 .footer .container {
