@@ -98,7 +98,7 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: var(--shadow-sm);
-  transition: background-color var(--transition-base), box-shadow var(--transition-base);
+  transition: background-color var(--transition-base), box-shadow var(--transition-base), padding var(--transition-base);
 }
 
 .navbar.scrolled {
@@ -115,6 +115,13 @@ body {
   align-items: center;
 }
 
+.logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
 .logo-svg {
   width: 200px;
   height: auto;
@@ -126,6 +133,31 @@ body {
 
 .logo a:hover .logo-svg {
   fill: var(--color-primary);
+}
+
+.logo-tagline {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 8.5px;
+  line-height: 1;
+  color: var(--color-text-muted);
+  letter-spacing: 0.035em;
+  margin-left: 14px;
+  width: 172px;
+  text-align: justify;
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-3px);
+  transition: opacity 0.3s ease, max-height 0.35s ease, transform 0.3s ease;
+  pointer-events: none;
+  display: block;
+  overflow: hidden;
+}
+
+.logo-link:hover .logo-tagline {
+  opacity: 1;
+  max-height: 18px;
+  transform: translateY(1px);
 }
 
 .nav-menu {
