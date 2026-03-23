@@ -1357,12 +1357,12 @@ body {
 /* ===== STATS SECTION ===== */
 
 .stats-section {
-  background: linear-gradient(135deg, #2f79ff 0%, #1e5cc9 100%);
+  background: linear-gradient(135deg, rgba(47, 121, 255, 0.7) 0%, rgba(30, 92, 201, 0.7) 100%);
   padding: 96px 0;
 }
 
 [data-theme="dark"] .stats-section {
-  background: linear-gradient(135deg, #2f79ff 0%, #1e5cc9 100%);
+  background: linear-gradient(135deg, rgba(47, 121, 255, 0.7) 0%, rgba(30, 92, 201, 0.7) 100%);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
