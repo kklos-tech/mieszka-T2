@@ -2370,6 +2370,7 @@ body {
     top: var(--nav-height);
     right: -100%;
     flex-direction: column;
+    gap: 0.5rem;
     background-color: var(--color-bg);
     width: 100%;
     max-width: 220px;
