@@ -1160,18 +1160,18 @@ body {
 }
 
 .projekt-tag.tag-type {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
-}
-
-.projekt-tag.tag-size {
   color: var(--color-success);
   border-color: var(--color-success);
 }
 
-.projekt-tag.tag-date {
+.projekt-tag.tag-size {
   color: #3b82f6;
   border-color: #3b82f6;
+}
+
+.projekt-tag.tag-date {
+  color: #8b5cf6;
+  border-color: #8b5cf6;
 }
 
 .projekt-sections {
