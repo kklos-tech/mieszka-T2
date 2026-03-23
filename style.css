@@ -35,6 +35,24 @@ h2 {
   margin-bottom: var(--space-6);
 }
 
+h2::before,
+h2::after {
+  content: '/';
+  color: var(--color-primary);
+  font-weight: var(--fw-bold);
+  display: inline-block;
+  transform: skewX(-45deg);
+  font-style: normal;
+}
+
+h2::before {
+  margin-right: 0.4em;
+}
+
+h2::after {
+  margin-left: 0.4em;
+}
+
 h3 {
   font-size: clamp(1.25rem, 2vw, 1.5rem);
   font-weight: var(--fw-semibold);
