@@ -17,17 +17,7 @@ async function loadProjektyData() {
 export function initProjekty() {
   const section = document.getElementById('projekty');
   if (!section || initialized) return;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(async (entry) => {
-      if (entry.isIntersecting) {
-        observer.unobserve(entry.target);
-        await loadAndRender();
-      }
-    });
-  }, { rootMargin: '300px 0px' });
-
-  observer.observe(section);
+  loadAndRender();
 }
 
 async function loadAndRender() {
