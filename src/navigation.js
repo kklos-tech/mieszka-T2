@@ -49,10 +49,7 @@ export function initNavigation() {
       const targetSection = document.querySelector(targetId);
 
       if (targetSection) {
-        const navHeight = navbar.offsetHeight;
-        const rect = targetSection.getBoundingClientRect();
-        const targetPosition = window.scrollY + rect.top - navHeight;
-        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
 
       hamburger.classList.remove('active');

@@ -24,7 +24,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -111,6 +111,10 @@ body {
 }
 
 /* ===== NAVBAR ===== */
+
+section[id] {
+  scroll-margin-top: 80px;
+}
 
 .navbar {
   position: fixed;
