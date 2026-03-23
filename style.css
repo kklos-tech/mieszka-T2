@@ -141,9 +141,9 @@ body {
   font-size: 11.2px;
   line-height: 1;
   color: var(--color-primary);
-  letter-spacing: 0.22em;
+  letter-spacing: 0.16em;
   margin-left: 14px;
-  width: 171px;
+  white-space: nowrap;
   text-align: left;
   opacity: 0;
   max-height: 0;
