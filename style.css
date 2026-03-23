@@ -1332,7 +1332,7 @@ body {
 
 .stats-section {
   background: linear-gradient(135deg, #2f79ff 0%, #1e5cc9 100%);
-  padding: var(--space-16) 0;
+  padding: 96px 0;
 }
 
 [data-theme="dark"] .stats-section {
