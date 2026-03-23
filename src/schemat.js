@@ -143,8 +143,12 @@ function showFlowchartAlter2(scenarioId) {
   }
 
   setTimeout(() => {
-    const schematSection = document.getElementById('schemat');
-    if (schematSection) schematSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const backBtn = document.getElementById('back-btn');
+    if (backBtn) {
+      const rect = backBtn.getBoundingClientRect();
+      const offset = window.scrollY + rect.top - 120;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
   }, 100);
 }
 
