@@ -441,20 +441,20 @@ body {
 .cta-button-primary {
   display: inline-block;
   padding: var(--space-4) var(--space-8);
-  background-color: var(--color-accent);
-  color: var(--color-bg);
+  background-color: var(--color-primary);
+  color: #fff;
   font-weight: var(--fw-bold);
   font-size: var(--text-base);
   border-radius: var(--radius-lg);
   border: none;
   transition: all var(--transition-base);
-  box-shadow: 0 4px 20px rgba(178, 252, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(47, 121, 255, 0.3);
 }
 
 .cta-button-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 28px rgba(178, 252, 0, 0.4);
-  background-color: var(--color-accent-hover);
+  box-shadow: 0 6px 28px rgba(47, 121, 255, 0.4);
+  background-color: var(--color-primary-hover);
 }
 
 .cta-button-secondary {
