@@ -57,7 +57,7 @@ function navigateProjekt(direction, shouldScroll = true) {
   currentProjektIndex = (currentProjektIndex + direction + totalProjects) % totalProjects;
   renderProjekt(currentProjektIndex);
   updateProjektIndicator();
-  if (shouldScroll && window.innerWidth <= 750) {
+  if (shouldScroll) {
     scrollToProjektySection();
   }
 }
@@ -69,7 +69,9 @@ function navigateProjektWithScroll(direction) {
 function scrollToProjektySection() {
   const projektySection = document.getElementById('projekty');
   if (projektySection) {
-    projektySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const navHeight = document.querySelector('.navbar')?.offsetHeight || 80;
+    const top = window.scrollY + projektySection.getBoundingClientRect().top - navHeight;
+    window.scrollTo({ top, behavior: 'smooth' });
   }
 }
 
