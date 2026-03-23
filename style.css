@@ -2236,6 +2236,23 @@ body {
     right: 0;
   }
 
+  .nav-theme-toggle-item {
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: var(--space-4);
+  }
+
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .theme-icon {
+    width: 20px;
+    height: 20px;
+  }
+
   .hero-rotating {
     height: 100px;
   }
