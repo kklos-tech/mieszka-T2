@@ -2142,14 +2142,16 @@ body {
 
 @media (min-width: 1024px) {
   .image-faq-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 42% 1fr;
+    grid-template-rows: 1fr;
     gap: var(--space-16);
+    align-items: stretch;
   }
 
   .image-faq-image {
-    flex: 0 0 42%;
     max-height: none;
-    align-self: stretch;
+    grid-row: 1 / -1;
   }
 
   .image-faq-image img {
@@ -2159,7 +2161,7 @@ body {
   }
 
   .image-faq-content {
-    flex: 1;
+    display: block;
   }
 
   .image-faq-content .faq-container {
