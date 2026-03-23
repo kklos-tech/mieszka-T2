@@ -164,7 +164,122 @@ Aby usunąć — skasuj całą linię `<span class="rotating-text">...</span>`.
 
 ---
 
-## 5. Szybkie podsumowanie — gdzie co jest
+## 5. Podmiana zdjęć na lokalne
+
+Wszystkie zdjęcia wrzucaj do folderu **`public/`** (lub podfolderów), a odwołuj się ścieżką zaczynającą się od `/`.
+
+### Skąd wziąć ścieżkę do pliku?
+
+```
+public/moje-zdjecie.jpg   →   /moje-zdjecie.jpg
+public/images/idea.jpg    →   /images/idea.jpg
+```
+
+---
+
+### A) Zdjęcie tła sekcji „Idea"
+
+Plik: **`index.html`**, linia ~239
+
+```html
+<!-- PRZED -->
+<img src="https://images.pexels.com/photos/271667/..." class="idea-background">
+
+<!-- PO -->
+<img src="/images/idea.jpg" class="idea-background">
+```
+
+Zalecany rozmiar: **1600 × 900 px** (pozioma orientacja, JPG).
+
+---
+
+### B) Zdjęcie przy sekcji FAQ (pytania i odpowiedzi)
+
+Plik: **`index.html`**, linia ~670
+
+```html
+<!-- PRZED -->
+<img src="https://images.pexels.com/photos/6585766/..." alt="...">
+
+<!-- PO -->
+<img src="/images/faq.jpg" alt="Konsultacja architektoniczna">
+```
+
+Zalecany rozmiar: **800 × 600 px** (pozioma lub pionowa), JPG.
+
+---
+
+### C) Zdjęcia w tle Hero (rotujące)
+
+Plik: **`index.html`**, linie ~213–220
+
+Każde `<img class="hero-background">` to jedno zdjęcie w rotacji. Podmień `src`:
+
+```html
+<!-- PRZED -->
+<img class="hero-background active" src="https://images.pexels.com/photos/7937319/..." alt="...">
+<img class="hero-background" src="https://images.pexels.com/photos/7203836/..." alt="...">
+
+<!-- PO -->
+<img class="hero-background active" src="/images/hero-01.jpg" alt="Wnętrze salonu">
+<img class="hero-background" src="/images/hero-02.jpg" alt="Sypialnia po audycie">
+```
+
+Pierwsze zdjęcie (z klasą `active`) wyświetla się jako pierwsze.
+Zalecany rozmiar: **1920 × 1080 px**, JPG. Możesz dodawać i usuwać dowolną liczbę linii `<img>`.
+
+---
+
+### D) Zdjęcia w scenariuszach (sekcja „Dlaczego audyt?")
+
+Plik: **`src/schemat.js`**, linie 4–9
+
+Na początku pliku jest tablica URL-i — po jednym na każdy scenariusz:
+
+```js
+// PRZED
+const scenarioImages = [
+  "https://images.pexels.com/photos/16865477/...",
+  "https://images.pexels.com/photos/8469938/...",
+  ...
+];
+
+// PO
+const scenarioImages = [
+  "/images/schemat-1.jpg",
+  "/images/schemat-2.jpg",
+  "/images/schemat-3.jpg",
+  "/images/schemat-4.jpg",
+  "/images/schemat-5.jpg",
+  "/images/schemat-6.jpg",
+];
+```
+
+Kolejność odpowiada kolejności scenariuszy (1–6).
+Zalecany rozmiar: **600 × 450 px**, JPG.
+
+---
+
+### E) Zdjęcia projektów w portfolio
+
+Opisane w sekcji **1. Dodawanie nowego projektu** powyżej.
+Folder: `public/images/projects/00X/`, nazwy plików `1.jpg`, `2.jpg` itd.
+
+---
+
+### Podsumowanie — gdzie wrzucać pliki
+
+| Sekcja | Folder w `public/` | Przykładowa ścieżka w HTML/JS |
+|---|---|---|
+| Idea (tło) | `public/images/` | `/images/idea.jpg` |
+| FAQ (zdjęcie boczne) | `public/images/` | `/images/faq.jpg` |
+| Hero (rotacja) | `public/images/` | `/images/hero-01.jpg` |
+| Scenariusze | `public/images/` | `/images/schemat-1.jpg` |
+| Projekty portfolio | `public/images/projects/00X/` | `/images/projects/005/1.jpg` |
+
+---
+
+## 6. Szybkie podsumowanie — gdzie co jest
 
 | Co chcesz zmienić | Plik |
 |---|---|
@@ -174,3 +289,4 @@ Aby usunąć — skasuj całą linię `<span class="rotating-text">...</span>`.
 | Rotujące hasła w Hero | `index.html` → sekcja `#hero` |
 | Kolory i typografia | `design-tokens.css` |
 | Treść sekcji Idea | `index.html` → sekcja `#idea` |
+| Zdjęcia (podmiana na lokalne) | patrz sekcja **5** powyżej |
