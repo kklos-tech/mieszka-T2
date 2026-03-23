@@ -141,11 +141,10 @@ body {
   font-size: 11.2px;
   line-height: 1;
   color: var(--color-primary);
-  letter-spacing: 0.035em;
+  letter-spacing: 0.22em;
   margin-left: 14px;
   width: 171px;
-  text-align: justify;
-  text-align-last: justify;
+  text-align: left;
   opacity: 0;
   max-height: 0;
   transform: translateY(-3px);
