@@ -2121,7 +2121,7 @@ body {
 
 .kontakt-section {
   padding: var(--space-24) 0;
-  background-color: var(--color-bg);
+  background: linear-gradient(to bottom, #ffffff 0%, #808080 100%);
 }
 
 .kontakt-section h2 {
