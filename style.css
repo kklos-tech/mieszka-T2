@@ -915,10 +915,10 @@ body {
 }
 
 .flow-step-list li {
-  padding: 6px 0 6px 28px;
+  padding: 4px 0 4px 28px;
   position: relative;
-  line-height: var(--leading-relaxed);
-  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  font-size: var(--text-md);
   color: var(--color-text-muted);
 }
 
@@ -2445,12 +2445,26 @@ body {
   .popular-badge { font-size: var(--text-xs); padding: 6px 35px; }
 }
 
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-content h4 { color: white !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-question { color: white !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-subquestion { color: rgba(255, 255, 255, 0.85) !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-list li { color: white !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-header svg { color: white !important; }
+[data-theme="dark"] .flow-step:nth-child(1) .flow-step-list li::before { color: rgba(255, 255, 255, 0.8) !important; }
+
 [data-theme="dark"] .flow-step:nth-child(2) .flow-step-content h4 { color: white !important; }
 [data-theme="dark"] .flow-step:nth-child(2) .flow-step-question { color: white !important; }
 [data-theme="dark"] .flow-step:nth-child(2) .flow-step-subquestion { color: rgba(255, 255, 255, 0.85) !important; }
 [data-theme="dark"] .flow-step:nth-child(2) .flow-step-list li { color: white !important; }
 [data-theme="dark"] .flow-step:nth-child(2) .flow-step-header svg { color: white !important; }
 [data-theme="dark"] .flow-step:nth-child(2) .flow-step-list li::before { color: white !important; }
+
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-content h4 { color: white !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-question { color: white !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-subquestion { color: rgba(255, 255, 255, 0.85) !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-list li { color: white !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-header svg { color: white !important; }
+[data-theme="dark"] .flow-step:nth-child(3) .flow-step-list li::before { color: white !important; }
 
 [data-theme="dark"] .flow-step:nth-child(4) .flow-step-content h4 { color: #1a1a1a !important; }
 [data-theme="dark"] .flow-step:nth-child(4) .flow-step-question { color: #1a1a1a !important; }
