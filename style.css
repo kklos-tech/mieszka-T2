@@ -141,12 +141,44 @@ body {
   color: var(--color-text);
   padding: 0.3rem 0.6rem;
   border-radius: var(--radius-sm);
-  transition: color var(--transition-fast), background-color var(--transition-fast);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.nav-menu li a::before,
+.nav-menu li a::after {
+  content: '/';
+  color: var(--color-accent);
+  font-weight: var(--fw-bold);
+  font-style: italic;
+  opacity: 0;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+  position: absolute;
+  top: 50%;
+}
+
+.nav-menu li a::before {
+  left: -2px;
+  transform: translateY(-50%) translateX(4px);
+}
+
+.nav-menu li a::after {
+  right: -2px;
+  transform: translateY(-50%) translateX(-4px);
 }
 
 .nav-menu li a:hover {
   color: var(--color-primary);
-  background-color: var(--color-primary-light);
+}
+
+.nav-menu li a:hover::before {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.nav-menu li a:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
 }
 
 .hamburger {
