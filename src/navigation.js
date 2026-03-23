@@ -5,7 +5,8 @@ export function initNavigation() {
   const navLinks = document.querySelectorAll('.nav-menu a');
   const themeToggle = document.getElementById('themeToggle');
 
-  const savedTheme = localStorage.getItem('theme') || 'light';
+  const rawTheme = localStorage.getItem('theme');
+  const savedTheme = rawTheme === 'dark' ? 'dark' : 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
 
   themeToggle.addEventListener('click', () => {
