@@ -162,6 +162,11 @@ function hideFlowchartAlter2() {
   if (collapseBtn) collapseBtn.style.display = 'none';
 
   setTimeout(() => {
-    if (selector) selector.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const schematSection = document.getElementById('schemat');
+    if (schematSection) {
+      const navHeight = document.querySelector('.navbar')?.offsetHeight || 80;
+      const top = window.scrollY + schematSection.getBoundingClientRect().top - navHeight;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
   }, 100);
 }
