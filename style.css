@@ -2142,22 +2142,29 @@ body {
 
 @media (min-width: 1024px) {
   .image-faq-grid {
+    display: grid;
     grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: 1fr;
     align-items: stretch;
   }
 
   .image-faq-image {
     max-height: none;
     height: 100%;
+    min-height: 0;
+    align-self: stretch;
   }
 
   .image-faq-image img {
     height: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
 
   .image-faq-content {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   .image-faq-content .faq-container {
