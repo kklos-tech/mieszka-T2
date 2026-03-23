@@ -2361,8 +2361,8 @@ body {
 
   .nav-menu a {
     font-size: var(--text-lg);
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .nav-menu {
