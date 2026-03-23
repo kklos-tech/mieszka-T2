@@ -143,8 +143,10 @@ body {
   color: var(--color-primary);
   letter-spacing: 0.16em;
   margin-left: 14px;
+  width: 171px;
   white-space: nowrap;
-  text-align: left;
+  text-align: justify;
+  text-align-last: justify;
   opacity: 0;
   max-height: 0;
   transform: translateY(-3px);
