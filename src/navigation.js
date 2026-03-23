@@ -42,18 +42,33 @@ export function initNavigation() {
     }
   });
 
+  function getOffsetTop(el) {
+    let top = 0;
+    while (el) {
+      top += el.offsetTop;
+      el = el.offsetParent;
+    }
+    return top;
+  }
+
+  function scrollToSection(targetSection) {
+    const navHeight = navbar.offsetHeight;
+    const top = getOffsetTop(targetSection) - navHeight;
+    window.scrollTo({ top, behavior: 'smooth' });
+  }
+
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const targetId = link.getAttribute('href');
       const targetSection = document.querySelector(targetId);
 
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-
       hamburger.classList.remove('active');
       navMenu.classList.remove('active');
+
+      if (targetSection) {
+        scrollToSection(targetSection);
+      }
     });
   });
 }
