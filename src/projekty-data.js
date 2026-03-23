@@ -1,7 +1,7 @@
 export const projektyData = [
   {
     id: 1,
-    title: "Łazienka marzen",
+    title: "Łazienka marzeń",
     type: "Kamienica",
     size: "7m\u00B2",
     date: "2015",
