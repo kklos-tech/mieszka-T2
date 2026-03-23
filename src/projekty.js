@@ -67,10 +67,10 @@ function navigateProjektWithScroll(direction) {
 }
 
 function scrollToProjektySection() {
-  const projektySection = document.getElementById('projekty');
-  if (projektySection) {
+  const gallery = document.getElementById(`projekt-gallery-${currentProjektIndex}`);
+  if (gallery) {
     const navHeight = document.querySelector('.navbar')?.offsetHeight || 80;
-    const top = window.scrollY + projektySection.getBoundingClientRect().top - navHeight;
+    const top = window.scrollY + gallery.getBoundingClientRect().top - navHeight;
     window.scrollTo({ top, behavior: 'smooth' });
   }
 }
