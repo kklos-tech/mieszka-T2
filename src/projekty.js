@@ -202,7 +202,7 @@ function renderProjekt(index) {
       </svg>
     </button>
 
-    <div class="projekt-indicator">
+    <div class="projekt-indicator" style="display:none;">
       <span id="projekt-current">${currentProjektIndex + 1}</span> / <span id="projekt-total">${projektyData.length}</span>
     </div>
 
@@ -218,6 +218,7 @@ function renderProjekt(index) {
   mainContainer.appendChild(bottomNav);
 
   container.addEventListener('click', handleProjektClick);
+  bottomNav.addEventListener('click', handleProjektClick);
   initGallerySwipe(index);
 }
 
