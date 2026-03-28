@@ -2471,10 +2471,10 @@ section[id] {
   .projekt-section h3 { font-size: var(--text-lg); }
   .projekt-section p { font-size: 0.96rem; }
   .benefit-tag { font-size: var(--text-sm); padding: 10px 20px; }
-  .gallery-nav { width: 48px; height: 48px; }
-  .gallery-nav svg { width: 24px; height: 24px; }
-  .gallery-nav-left { left: 16px; }
-  .gallery-nav-right { right: 16px; }
+  .gallery-nav { width: 32px; height: 32px; }
+  .gallery-nav svg { width: 16px; height: 16px; }
+  .gallery-nav-left { left: 6px; }
+  .gallery-nav-right { right: 6px; }
   .gallery-slides { width: 100%; }
   .gallery-slide { min-width: 100%; width: 100%; flex: 0 0 100%; }
   .projekt-nav-btn { font-size: var(--text-sm); padding: var(--space-3) var(--space-5); }
